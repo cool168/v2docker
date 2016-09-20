@@ -3,7 +3,7 @@
     "loglevel": "warning"
   },
   "inbound": {
-    "port": 1080,
+    "port": LOCAL_PORT,
     "listen": "0.0.0.0",
     "protocol": "socks",
     "settings": {
@@ -17,12 +17,12 @@
     "settings": {
       "vnext": [
         {
-          "address": "v2ray.com",
-          "port": 31051,
+          "address": "SERVER_ADDR",
+          "port": SERVER_PORT,
           "users": [
             {
-              "id": "d18f5b20-2609-40ee-bfb1-aa442d0b253f",
-              "alterId": 64
+              "id": "SERVER_UUID",
+              "alterId": SERVER_ALTER_ID
             }
           ]
         }
