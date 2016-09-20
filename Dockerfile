@@ -11,7 +11,7 @@ COPY init.sh /init.sh
 COPY client-config.json /etc/v2ray/client-config.json
 COPY supervisord.conf /etc/supervisor/
 COPY services.conf /etc/supervisor/conf.d/
-RUN chmod +x init.sh
+RUN chmod +x /init.sh
 #EXPOSE 1080
 
 ENTRYPOINT ["/init.sh"]
