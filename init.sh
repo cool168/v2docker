@@ -2,7 +2,7 @@
 #!/bin/sh
 
 INSTALL_FLAG="/v2ray-client.installed"	
-CONF="/client-config.json"
+CONF="/etc/v2ray/client-config.json"
 
 if [ ! -f "$INSTALL_FLAG" ]; then
 	
@@ -15,4 +15,4 @@ if [ ! -f "$INSTALL_FLAG" ]; then
 	touch $INSTALL_FLAG
 fi
 
-/app/v2ray/v2ray -config $CONF
+/usr/bin/v2ray/v2ray -config $CONF
