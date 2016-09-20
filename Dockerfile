@@ -8,7 +8,7 @@ RUN apt-get update &&DEBIAN_FRONTEND=noninteractive apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 COPY init.sh /init.sh
-COPY user-config.json /etc/v2ray/user-config.json
+COPY client-config.json /etc/v2ray/client-config.json
 COPY supervisord.conf /etc/supervisor/
 COPY services.conf /etc/supervisor/conf.d/
 
