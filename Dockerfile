@@ -2,7 +2,6 @@ FROM ubuntu:14.04
 
 RUN apt-get update &&DEBIAN_FRONTEND=noninteractive apt-get install -y \
         curl \
-        supervisor \
         unzip \
     && curl -L -s https://raw.githubusercontent.com/v2ray/v2ray-core/master/release/install-release.sh | bash \
     && mv /etc/v2ray/config.json /etc/v2ray/config.json.bak \
