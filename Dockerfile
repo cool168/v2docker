@@ -11,7 +11,7 @@ RUN chmod +x /app
 COPY ./*.sh /app/
 RUN chmod +x /app/*.sh
 
-COPY client-config.json /etc/v2ray/client-config.json
+COPY ./client-config.json /etc/v2ray/client-config.json
 
 WORKDIR /app
 #EXPOSE 1080
