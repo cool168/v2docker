@@ -4,7 +4,7 @@
 CONF="/etc/v2ray/client-config.json"
 
 if [ $ENABLE_OUTCFG = "no" ]; then
-	
+        cp /app/v2ray-client.json $CONF	
 	sed -i "s/LOCAL_PORT/${LOCAL_PORT}/g" $CONF
 	sed -i "s/SERVER_ADDR/${SERVER_ADDR}/g" $CONF
 	sed -i "s/SERVER_PORT/${SERVER_PORT}/g" $CONF
