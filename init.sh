@@ -2,6 +2,11 @@
 #!/bin/sh
 
 CONF="/etc/v2ray/client-config.json"
+INSTALL_FLAG="/app/v2ray-client.installed"
+
+if [ ! -f "$INSTALL_FLAG" ]; then
+	touch $INSTALL_FLAG
+fi
 
 if [ $ENABLE_OUTCFG = "no" ]; then
         cp /app/client-config.json $CONF	
