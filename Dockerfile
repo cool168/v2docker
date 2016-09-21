@@ -13,4 +13,4 @@ COPY client-config.json /etc/v2ray/client-config.json
 RUN chmod +x /init.sh
 #EXPOSE 1080
 
-ENTRYPOINT ["/init.sh"]
+#ENTRYPOINT ["/init.sh"]
