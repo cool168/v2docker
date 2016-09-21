@@ -3,7 +3,7 @@
 
 CONF="/etc/v2ray/client-config.json"
 
-if [ $ENABLE_OUTCFG= "no" ]; then
+if [ $ENABLE_OUTCFG = "no" ]; then
 	
 	sed -i "s/LOCAL_PORT/${LOCAL_PORT}/g" $CONF
 	sed -i "s/SERVER_ADDR/${SERVER_ADDR}/g" $CONF
