@@ -9,7 +9,7 @@ RUN apt-get update &&DEBIAN_FRONTEND=noninteractive apt-get install -y \
 RUN mkdir -p /app
 RUN chmod +x /app
 COPY ./*.sh /app/
-COPY ./client-config.json /app/
+COPY ./*.json /app/
 RUN chmod +x /app/*.sh
 
 WORKDIR /app
